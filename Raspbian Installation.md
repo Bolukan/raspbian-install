@@ -1,11 +1,11 @@
 **Prepare SD Card**
-* Raspbian Stretch Lite
+* Download [Raspbian Stretch Lite](Version Raspbian.md)
 * Download and install [Etcher](https:/etcher.io/)
 * Flash **2017-11-29-raspbian-stretch-lite.zip** with Etcher
 
 **Add WIFI**
 * Add your SSID and WIFIPASSWORD to the file [wpa_supplicant.conf](wpa_supplicant.conf)
-* Copy the file in partion *boot*, during first boot, this file will be moved to **/etc/wpa_supplicant/wpa_supplicant.conf**
+* Copy the file in partion *boot*. During first boot, this file will be moved to **/etc/wpa_supplicant/wpa_supplicant.conf**
 * First 3 lines are from original **/etc/wpa_supplicant/wpa_supplicant.conf**
 
 **Add SSH**

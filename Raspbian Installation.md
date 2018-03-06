@@ -13,7 +13,7 @@
 * The file is empty and without extension
 
 **Boot Pi**
-* SSH Login, use putty.exe for Windows or SSH for Linux
+* SSH Login, use putty.exe for Windows or SSH for Linux: ssh pi@192.168.1.x
 * Account: **pi** and password: **raspberry**
 
 **Update raspbian**
@@ -24,7 +24,7 @@ sudo apt-get upgrade
 
 **First configuration**
 ```
-sudo apt-get raspi-config
+sudo raspi-config
 ```
 ```
 1. Change User Password
@@ -39,7 +39,7 @@ Avoid name conflicts and replace default hostname **raspberrypi** with **YOUR_NA
 4. Localisation Options
 I1 Change Locale
 ```
-nl-NL.UTF-8 UTF-8
+nl-NL.UTF-8 UTF-8  
 default locale for the system environment: en_GB.UTF-8
 ```
 4. Localisation Options

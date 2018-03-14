@@ -8,14 +8,11 @@
  <meta name="author" content="">
  <link rel="icon" href="favicon.ico">
 
- <title>Bolukan PiZero2</title>
+ <title>Bolukan PiZero</title>
 </head>
 <body>
-<h1>Bolukan PiZero2</h1>
-<h2>Tirza en Elise</h2>
-<p>Tirza en Elise vinden vind dit superleuk.</p>
+<h1>Bolukan PiZero</h1>
 <h2>phpinfo</h2>
 <?php echo phpinfo(); ?>
 </body>
 </html>
-

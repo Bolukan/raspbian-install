@@ -1,4 +1,4 @@
-Based on https://thepi.io/how-to-set-up-a-web-server-on-the-raspberry-pi/
+Based on https://thepi.io/how-to-set-up-a-web-server-on-the-raspberry-pi/  
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
 ## Install Nginx

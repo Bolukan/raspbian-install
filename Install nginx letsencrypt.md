@@ -1,31 +1,25 @@
 Based on https://thepi.io/how-to-set-up-a-web-server-on-the-raspberry-pi/  
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
-### Install Nginx
+##### Uncomment en_GB.UTF-8 and nl-NL.UTF-8 and regenerate
 ```
-sudo apt-get install nginx
+sudo nano /etc/locale.gen
+sudo locale-gen
 ```
-### Install PHP
+
+### Install Nginx, PHP (7.0) and Sqlite3
 ```
-sudo apt-get install php-fpm
+sudo apt-get install nginx php-fpm sqlite3
 ```
-##### Change default to enable php and some index.php
+##### Change default to enable php and create some index.php
+* [/etc/nginx/available-sites/default](etc/nginx/available-sites/default)
+* [/var/www/html/index.php](var/www/html/index.php)
 ```
-sudo nano [/etc/nginx/available-sites/default](etc/nginx/available-sites/default)  
-sudo nano [/var/www/html/index.php](var/www/html/index.php)
+sudo nano /etc/nginx/available-sites/default
+sudo nano /var/www/html/index.php
 ```
 ### Restart server
 ```
 sudo systemctl restart nginx
 ```
 Check using your browser
-
-## Install MySQL
-```
-sudo apt-get install mysql-server
-sudo mysql_secure_installation
-```
-## Install Let's Encrypt
-```
-sudo apt-get install letsencrypt
-```

@@ -9,13 +9,11 @@
  <meta name="description" content="">
  <meta name="author" content="">
  <link rel="icon" href="favicon.ico">
- <title>PiZero</title>
+ <title>phpinfo</title>
 </head>
 <body>
 <div class="container">
-<h1>PiZero</h1>
-
-
+<?php echo phpinfo(); ?>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

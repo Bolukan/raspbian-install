@@ -21,6 +21,12 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+##### Uncomment en_GB.UTF-8 and nl-NL.UTF-8 and regenerate
+```
+sudo nano /etc/locale.gen
+sudo locale-gen
+```
+
 **First configuration**
 ```
 sudo raspi-config

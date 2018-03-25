@@ -54,13 +54,12 @@ config_webserver() {
 }
 
 config_general() {
-  [ -e /sys/class/net/wlan0 ] && cat /sys/class/net/wlan0/address || echo "No wlan0" > /var/www/html/wlan0.txt
-  [ -e /sys/class/net/eth0 ] && cat /sys/class/net/eth0/address || echo "No eth0" > /var/www/html/eth0.txt
-
+  [ -e /sys/class/net/wlan0 ] && cat /sys/class/net/wlan0/address > ~/wlan0.txt || echo "No wlan0"
+  [ -e /sys/class/net/eth0 ] && cat /sys/class/net/eth0/address > ~/eth0.txt || echo "No eth0"
 }
 
 introduction
-# general_update
-# install_webserver
+general_update
+install_webserver
 config_webserver
 config_general

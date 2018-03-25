@@ -14,7 +14,7 @@
 <body>
 <div class="container">
 <h1>PiZero</h1>
-
+<p>MAC-ADDRESS wlan0: <?php echo file_get_contents('wlan0.txt') ?></p>
 
 </div>
 <!-- Optional JavaScript -->
